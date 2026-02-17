@@ -125,7 +125,7 @@ const Tourism = () => {
           <div className="max-w-3xl mx-auto text-center">
             <SectionTitle
               title="Your Gateway to Exploration"
-              subtitle="TMS Residency is strategically located near popular tourist destinations"
+              subtitle="Sri Balaji Residency is strategically located near popular tourist destinations"
             />
             <p className="text-muted-foreground leading-relaxed">
               Whether you're here for business or leisure, our location offers easy access to
@@ -172,7 +172,7 @@ const Tourism = () => {
         </div>
       </section>
 
-      {/* Travel Information */}
+      {/* Travel Information
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <SectionTitle
@@ -195,7 +195,7 @@ const Tourism = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Travel Assistance */}
       <section className="py-16 bg-secondary/30">

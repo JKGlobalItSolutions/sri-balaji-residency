@@ -12,13 +12,13 @@ import roomDeluxe from "@/assets/room-deluxe.jpg";
 
 const rooms = [
   {
-    id: "single",
+    id: "Family Room",
     image: roomSingle,
-    name: "Single Room",
+    name: "Family Room",
     description: "Perfect for solo travelers seeking comfort and convenience. Our single rooms offer a cozy retreat with all essential amenities for a restful stay.",
-    bedType: "Single Bed",
-    capacity: 1,
-    price: 1800,
+    bedType: "King Bed",
+    capacity: 6,
+    price: 4000,
     features: [
       "Comfortable single bed with premium bedding",
       "Air conditioning with individual control",
@@ -31,15 +31,15 @@ const rooms = [
     ],
   },
   {
-    id: "double",
+    id: "Suite Room",
     image: roomDouble,
-    name: "Double Room",
+    name: "Suite Room",
     description: "Ideal for couples or travelers who appreciate extra space. Our double rooms feature elegant interiors and premium amenities for a comfortable stay.",
-    bedType: "Queen Bed",
-    capacity: 2,
-    price: 2000,
+    bedType: "King Bed",
+    capacity: 3,
+    price: 3000,
     features: [
-      "Spacious queen-size bed with luxury linens",
+      "Spacious King-size bed with luxury linens",
       "Air conditioning with individual control",
       "High-speed WiFi connectivity",
       "40-inch flat-screen TV",
@@ -51,9 +51,9 @@ const rooms = [
     ],
   },
   {
-    id: "deluxe",
+    id: "Standard Room",
     image: roomDeluxe,
-    name: "Deluxe Room",
+    name: "Standard Room",
     description: "Our premium offering for guests who seek the finest in comfort and luxury. Deluxe rooms provide generous space and top-tier amenities.",
     bedType: "King Bed",
     capacity: 3,
@@ -213,10 +213,10 @@ const Rooms = () => {
             </div>
             <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
               <Coffee className="h-6 w-6 text-primary shrink-0" />
-              <div>
+              {/* <div>
                 <h4 className="font-semibold text-foreground mb-1">Breakfast</h4>
                 <p className="text-sm text-muted-foreground">Available on request</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

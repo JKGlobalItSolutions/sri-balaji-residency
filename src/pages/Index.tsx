@@ -40,13 +40,13 @@ import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 
 const rooms = [
-  // {
-  //   image: roomSingle,
-  //   name: "Single Room",
-  //   bedType: "Single Bed",
-  //   capacity: 1,
-  //   price: 1800,
-  // },
+  {
+    image: roomSingle,
+    name: "Family Room",
+    bedType: "King Bed",
+    capacity: 4,
+    price: 4000,
+  },
   {
     image: roomDouble,
     name: "Suite Room",
@@ -182,7 +182,7 @@ const Index = () => {
             ))}
           </div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-            TMS Residency is ideally located near popular tourist destinations, making it
+            Sri Balaji Residency is ideally located near popular tourist destinations, making it
             perfect for travelers exploring the city. Our concierge team is happy to assist
             with travel arrangements and recommendations.
           </p>

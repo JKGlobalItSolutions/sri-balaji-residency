@@ -65,21 +65,21 @@ const amenities = [
     title: "Power Backup",
     description: "Never worry about power outages. Our backup power system ensures uninterrupted electricity supply throughout your stay.",
   },
-  {
-    icon: Bath,
-    title: "Clean Bathrooms",
-    description: "Spotless, well-maintained bathrooms with modern fixtures. We follow strict hygiene protocols for your health and comfort.",
-  },
-  {
-    icon: WashingMachine,
-    title: "Laundry Service",
-    description: "Professional laundry and dry cleaning services available. Get your clothes cleaned and pressed with quick turnaround times.",
-  },
-  {
-    icon: UtensilsCrossed,
-    title: "Dining Options",
-    description: "Enjoy delicious meals at our in-house restaurant or order room service. We offer a variety of cuisines to satisfy your palate.",
-  },
+  // {
+  //   icon: Bath,
+  //   title: "Clean Bathrooms",
+  //   description: "Spotless, well-maintained bathrooms with modern fixtures. We follow strict hygiene protocols for your health and comfort.",
+  // },
+  // {
+  //   icon: WashingMachine,
+  //   title: "Laundry Service",
+  //   description: "Professional laundry and dry cleaning services available. Get your clothes cleaned and pressed with quick turnaround times.",
+  // },
+  // {
+  //   icon: UtensilsCrossed,
+  //   title: "Dining Options",
+  //   description: "Enjoy delicious meals at our in-house restaurant or order room service. We offer a variety of cuisines to satisfy your palate.",
+  // },
   {
     icon: Phone,
     title: "Direct Dial Telephone",
