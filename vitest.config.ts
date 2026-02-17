@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: "/sri-balaji-residency/",
   test: {
     environment: "jsdom",
     globals: true,
@@ -11,6 +12,7 @@ export default defineConfig({
     include: ["src/**/*.{test,spec}.{ts,tsx}"],
   },
   resolve: {
+
     alias: { "@": path.resolve(__dirname, "./src") },
   },
 });
