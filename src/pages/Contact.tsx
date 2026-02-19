@@ -35,9 +35,9 @@ const Contact = () => {
       </section>
 
       {/* Quick Contact Actions */}
-      <section className="py-12 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="py-12 bg-secondary/40">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3.8 gap-6">
             {/* Phone */}
             <a
               href="tel:6383288528"
@@ -71,14 +71,14 @@ const Contact = () => {
             {/* Email */}
             <a
               href="mailto:info@tmsresidency.com"
-              className="flex items-center gap-4 p-6 rounded-lg bg-card border border-border hover:border-primary/30 transition-colors group"
+              className="flex items-center gap-4 p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors group"
             >
-              <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <Mail className="h-7 w-7 text-primary" />
+              <div className="h-10 w-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/50 transition-colors">
+                <Mail className="h-8 w-12 text-primary" />
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Email Us</p>
-                <p className="text-lg font-semibold text-foreground">balajiresidencytiruvannamalai@gmail.com</p>
+                <p className="text-m font-semibold text-foreground">balajiresidencytiruvannamalai@gmail.com</p>
               </div>
             </a>
 

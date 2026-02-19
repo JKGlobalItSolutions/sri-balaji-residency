@@ -20,7 +20,7 @@
     --popover-foreground: 30 10% 15%;
 
     /* Rich gold primary */
-    --primary: 38 70% 45%;
+    --primary: 38 60% 35%; /* Darker gold */
     --primary-foreground: 40 33% 98%;
 
     /* Warm cream secondary */

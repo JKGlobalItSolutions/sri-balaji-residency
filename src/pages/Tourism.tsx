@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionTitle from "@/components/SectionTitle";
@@ -14,47 +15,66 @@ import {
   Utensils,
   Train,
   Plane,
+  X,
+  Waves,
 } from "lucide-react";
-
-import hero3 from "@/assets/hero-3.jpg";
+import Banner5 from "@/assets/Banner5.png";
 import gallery10 from "@/assets/gallery-10.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const nearbyAttractions = [
   {
     icon: Landmark,
-    title: "Ancient Temples",
-    distance: "2-5 km",
-    description: "Visit centuries-old temples showcasing beautiful Dravidian architecture and rich spiritual heritage. Popular temples include the famous Kapaleeshwarar Temple and Parthasarathy Temple.",
-  },
-  {
-    icon: Camera,
-    title: "Marina Beach",
-    distance: "8 km",
-    description: "One of the longest urban beaches in the world. Perfect for morning walks, evening sunsets, and experiencing local street food culture.",
-  },
-  {
-    icon: Building,
-    title: "Government Museum",
-    distance: "6 km",
-    description: "One of India's oldest museums with an impressive collection of archaeological and numismatic artifacts, bronze statues, and more.",
+    title: "Arunachaleswarar Temple",
+    distance: "500 m",
+    description:
+      "The world-famous Arunachaleswarar Temple dedicated to Lord Shiva. Known for its massive gopurams, deep spiritual significance, and the grand Karthigai Deepam festival celebrated every year.",
+    image: gallery1,
   },
   {
     icon: TreePine,
-    title: "Guindy National Park",
-    distance: "10 km",
-    description: "A protected area right in the city featuring diverse flora and fauna. Perfect for nature lovers and wildlife enthusiasts.",
+    title: "Annamalaiyar Hill (Arunachala Hill)",
+    distance: "1 km",
+    description:
+      "A sacred hill considered a manifestation of Lord Shiva. Devotees perform Girivalam (circumambulation) around the 14 km path, especially on full moon days.",
+    image: gallery2,
   },
   {
-    icon: ShoppingBag,
-    title: "T. Nagar Shopping District",
+    icon: Building,
+    title: "Sri Ramana Ashram",
+    distance: "3 km",
+    description:
+      "A peaceful spiritual center established by Sri Ramana Maharshi. A perfect place for meditation, self-inquiry, and experiencing divine tranquility.",
+    image: gallery3,
+  },
+  {
+    icon: Waves,
+    title: "Sathanur Dam",
+    distance: "30 km",
+    description:
+      "A scenic dam surrounded by beautiful gardens and hills. Ideal for family outings, nature lovers, and photography enthusiasts.",
+    image: gallery4,
+  },
+  {
+    icon: Camera,
+    title: "Virupaksha Cave",
     distance: "4 km",
-    description: "The ultimate shopping destination for silk sarees, jewelry, and traditional South Indian products. A must-visit for shopaholics.",
+    description:
+      "A historic cave on Arunachala Hill where Sri Ramana Maharshi meditated. Offers a spiritual atmosphere along with panoramic views of Tiruvannamalai.",
+    image: gallery5,
   },
   {
     icon: Utensils,
-    title: "Local Cuisine Streets",
-    distance: "1-3 km",
-    description: "Experience authentic South Indian cuisine from famous restaurants and street food stalls. Don't miss the filter coffee and dosas!",
+    title: "Local South Indian Cuisine",
+    distance: "1-2 km",
+    description:
+      "Enjoy authentic Tamil Nadu meals, traditional tiffin varieties, and filter coffee from local restaurants around the temple area.",
+    image: gallery6,
   },
 ];
 
@@ -96,6 +116,48 @@ const services = [
   "Car rental services",
 ];
 
+interface Attraction {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  distance: string;
+  description: string;
+  image: string;
+}
+
+interface AttractionFlipCardProps {
+  attraction: Attraction;
+  index: number;
+  flippedIndex: number | null;
+  onCardClick: (index: number) => void;
+  onBackClick: (e: React.MouseEvent, index: number) => void;
+}
+
+const AttractionCard: React.FC<AttractionFlipCardProps> = ({ 
+  attraction, 
+  index, 
+  flippedIndex, 
+  onCardClick, 
+  onBackClick 
+}) => {
+  return (
+    <div className="rounded-xl bg-card border border-border p-6 hover:shadow-elevated transition-shadow">
+      <div className="flex items-start gap-4">
+        <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+          <attraction.icon className="h-6 w-6 text-primary" />
+        </div>
+        <div className="flex-1">
+          <h3 className="font-serif text-lg font-semibold text-foreground mb-2">{attraction.title}</h3>
+          <p className="text-sm text-muted-foreground mb-3">{attraction.description}</p>
+          <div className="flex items-center gap-2 text-sm text-primary font-medium">
+            <span className="h-2 w-2 rounded-full bg-primary" />
+            {attraction.distance} from hotel
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Tourism = () => {
   return (
     <div className="min-h-screen">
@@ -104,7 +166,7 @@ const Tourism = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <img
-          src={hero3}
+          src={Banner5}
           alt="Tourism"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -114,7 +176,7 @@ const Tourism = () => {
             Explore the City
           </h1>
           <p className="text-xl text-primary-foreground/90">
-            Discover amazing attractions near TMS Residency
+            Discover amazing attractions near Sri Balaji Residency
           </p>
         </div>
       </section>
@@ -145,28 +207,15 @@ const Tourism = () => {
             subtitle="Popular destinations within easy reach"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {nearbyAttractions.map((attraction) => (
-              <div
+            {nearbyAttractions.map((attraction, index) => (
+              <AttractionCard
                 key={attraction.title}
-                className="bg-card p-6 rounded-lg border border-border luxury-hover"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <attraction.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
-                      {attraction.title}
-                    </h3>
-                    <p className="text-sm text-primary font-medium mb-2">
-                      {attraction.distance} from hotel
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {attraction.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
+                attraction={attraction}
+                index={index}
+                flippedIndex={null}
+                onCardClick={() => {}}
+                onBackClick={() => {}}
+              />
             ))}
           </div>
         </div>

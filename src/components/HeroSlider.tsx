@@ -3,23 +3,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
+import BB from "@/assets/BB.jpeg";
+import Banner2 from "@/assets/Banner2.jpg";
+import Banner3 from "@/assets/Banner3.png";
 
 const slides = [
   {
-    image: hero1,
+    image: BB,
     title: "Luxury Stay at Sri  Balaji Residency",
     subtitle: "Comfort, elegance, and affordable premium rooms",
   },
   {
-    image: hero2,
+    image: Banner2,
     title: "Experience Premium Comfort",
     subtitle: "Thoughtfully designed rooms for the perfect rest",
   },
   {
-    image: hero3,
+    image: Banner3,
     title: "Your Home Away from Home",
     subtitle: "Exceptional hospitality awaits you",
   },
@@ -84,7 +84,7 @@ const HeroSlider = () => {
               className="animate-fade-in-up"
               style={{ animationDelay: "0.4s" }}
             >
-              <Link to="/contact">Book Now</Link>
+              <a href="https://www.bookingengine.sonachala.com/#/hotels/sri-balaji-residency" target="_blank" rel="noopener noreferrer">Book Now</a>
             </Button>
           </div>
         </div>

@@ -169,7 +169,7 @@ const Amenities = () => {
             Book your stay today and enjoy all the facilities that make Sri Balaji Residency special.
           </p>
           <Button variant="secondary" size="lg" asChild>
-            <Link to="/contact">Book Your Stay</Link>
+            <Link to="https://www.bookingengine.sonachala.com/#/hotels/sri-balaji-residency">Book Your Stay</Link>
           </Button>
         </div>
       </section>

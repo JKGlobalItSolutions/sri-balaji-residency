@@ -27,17 +27,17 @@ import {
   Mail,
 } from "lucide-react";
 
-import roomSingle from "@/assets/room-single.jpg";
-import roomDouble from "@/assets/room-double.jpg";
-import roomDeluxe from "@/assets/room-deluxe.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
+import roomSingle from "@/assets/room-single.JPG";
+import roomDouble from "@/assets/room-double.JPG";
+import roomDeluxe from "@/assets/room-deluxe.JPG";
+import gallery1 from "@/assets/room-deluxe.JPG";
+import gallery2 from "@/assets/gallery-2.JPG";
+import gallery3 from "@/assets/gallery-3.JPG";
+import gallery4 from "@/assets/gallery-4.JPG";
+import gallery5 from "@/assets/gallery-5.JPG";
+import gallery6 from "@/assets/gallery-6.JPG";
+import gallery7 from "@/assets/gallery-7.JPG";
+import gallery8 from "@/assets/gallery-8.JPG";
 
 const rooms = [
   {
@@ -174,7 +174,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <SectionTitle
             title="Explore Nearby"
-            subtitle="TMS Residency is located near popular tourist destinations"
+            subtitle="Sri Balaji Residency is located near popular tourist destinations"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {tourism.map((item) => (
@@ -184,7 +184,7 @@ const Index = () => {
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">
             Sri Balaji Residency is ideally located near popular tourist destinations, making it
             perfect for travelers exploring the city. Our concierge team is happy to assist
-            with travel arrangements and recommendations.
+            with travel arrangements and recommendations. 
           </p>
         </div>
       </section>
@@ -213,7 +213,7 @@ const Index = () => {
 
             {/* Contact Info & Form */}
             <div className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2.5 gap-6">
                 <a
                   href="tel:6383288528"
                   className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/30 transition-colors"
@@ -235,7 +235,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email Us</p>
-                    <p className="font-semibold text-foreground">info@tmsresidency.com</p>
+                    <p className="font-semibold text-foreground">balajiresidencytiruvannamalai@gmail.com</p>
                   </div>
                 </a>
               </div>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Wifi, Wind, Users, Bed, Tv, Bath, Coffee, Clock } from "lucide-react";
 
-import hero2 from "@/assets/hero-2.jpg";
+import Banner3 from "@/assets/Banner3.png";
 import roomSingle from "@/assets/room-single.jpg";
 import roomDouble from "@/assets/room-double.jpg";
 import roomDeluxe from "@/assets/room-deluxe.jpg";
@@ -134,8 +134,8 @@ const RoomDetailCard = ({ room }: { room: typeof rooms[0] }) => {
             <span className="text-4xl font-serif font-bold text-primary">₹{room.price.toLocaleString()}</span>
             <span className="text-muted-foreground"> / night</span>
           </div>
-          <Button size="lg" asChild>
-            <Link to="/contact">Book Now</Link>
+          <Button size="lg" onClick={() => window.open("https://www.bookingengine.sonachala.com/#/hotels/sri-balaji-residency", "_blank")}>
+            Book Now
           </Button>
         </div>
       </div>
@@ -151,7 +151,7 @@ const Rooms = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <img
-          src={hero2}
+          src={Banner3}
           alt="Our Rooms"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -196,7 +196,7 @@ const Rooms = () => {
       <section className="py-12 bg-secondary/30">
         <div className="container mx-auto px-4">
           <SectionTitle title="Room Policies" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
               <Clock className="h-6 w-6 text-primary shrink-0" />
               <div>
@@ -211,13 +211,13 @@ const Rooms = () => {
                 <p className="text-sm text-muted-foreground">By 11:00 AM</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
+            {/* <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
               <Coffee className="h-6 w-6 text-primary shrink-0" />
-              {/* <div>
+              <div>
                 <h4 className="font-semibold text-foreground mb-1">Breakfast</h4>
                 <p className="text-sm text-muted-foreground">Available on request</p>
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>

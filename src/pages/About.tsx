@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check, Award, Heart, Users, Sparkles } from "lucide-react";
 
-import hero1 from "@/assets/hero-1.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
+import Banner4 from "@/assets/Banner4.png";
+import gallery5 from "@/assets/gallery-10.jpg";
 
 const highlights = [
   "Premium quality rooms at affordable prices",
@@ -48,7 +48,7 @@ const About = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <img
-          src={hero1}
+          src={Banner4}
           alt="About Sri Balaji Residency"
           className="absolute inset-0 w-full h-full object-cover"
         />

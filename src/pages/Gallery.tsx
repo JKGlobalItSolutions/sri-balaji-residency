@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import SectionTitle from "@/components/SectionTitle";
 import GalleryLightbox from "@/components/GalleryLightbox";
 
-import hero1 from "@/assets/hero-1.jpg";
+import Banner2 from "@/assets/Banner2.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import roomSingle from "@/assets/room-single.jpg";
@@ -21,9 +21,9 @@ import gallery9 from "@/assets/gallery-9.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 
 const allImages = [
-  { src: hero1, alt: "Elegant Hotel Lobby" },
-  { src: hero2, alt: "Luxurious Bedroom Suite" },
-  { src: hero3, alt: "Rooftop Terrace" },
+  // { src: hero1, alt: "Elegant Hotel Lobby" },
+  // { src: hero2, alt: "Luxurious Bedroom Suite" },
+  // { src: hero3, alt: "Rooftop Terrace" },
   { src: roomSingle, alt: "Single Room" },
   { src: roomDouble, alt: "Double Room" },
   { src: roomDeluxe, alt: "Deluxe Room" },
@@ -47,7 +47,7 @@ const Gallery = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <img
-          src={hero1}
+          src={Banner2}
           alt="Gallery"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -57,7 +57,7 @@ const Gallery = () => {
             Photo Gallery
           </h1>
           <p className="text-xl text-primary-foreground/90">
-            A visual tour of TMS Residency
+            A visual tour of Sri Balaji Residency
           </p>
         </div>
       </section>
