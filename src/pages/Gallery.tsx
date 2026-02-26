@@ -9,7 +9,7 @@ import hero3 from "@/assets/hero-3.jpg";
 import roomSingle from "@/assets/room-single.jpg";
 import roomDouble from "@/assets/room-double.jpg";
 import roomDeluxe from "@/assets/room-deluxe.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/room-deluxe.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
