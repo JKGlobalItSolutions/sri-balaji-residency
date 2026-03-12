@@ -134,7 +134,7 @@ const RoomDetailCard = ({ room }: { room: typeof rooms[0] }) => {
             <span className="text-4xl font-serif font-bold text-primary">₹{room.price.toLocaleString()}</span>
             <span className="text-muted-foreground"> / night</span>
           </div>
-          <Button size="lg" onClick={() => window.open("https://www.booking.com/hotel/in/sri-balaji-residency-tiruvannamalai.html", "_blank")}>
+          <Button size="lg" onClick={() => window.open("https://www.booking.com/hotel/in/sri-balaji-residency-tiruvannamalai.en-gb.html", "_blank")}>
             Book Now
           </Button>
         </div>

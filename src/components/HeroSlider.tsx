@@ -84,7 +84,7 @@ const HeroSlider = () => {
               className="animate-fade-in-up"
               style={{ animationDelay: "0.4s" }}
             >
-              <a href="https://www.booking.com/hotel/in/sri-balaji-residency-tiruvannamalai.html" target="_blank" rel="noopener noreferrer">Book Now</a>
+              <a href="https://www.booking.com/hotel/in/sri-balaji-residency-tiruvannamalai.en-gb.html" target="_blank" rel="noopener noreferrer">Book Now</a>
             </Button>
           </div>
         </div>
