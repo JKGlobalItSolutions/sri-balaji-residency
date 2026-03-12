@@ -79,7 +79,7 @@ const Navbar = () => {
               <span>6383288528</span>
             </a>
             <Button variant="default" asChild>
-              <Link to="/contact">Book Now</Link>
+              <Link to="https://www.booking.com/hotel/in/sri-balaji-residency-tiruvannamalai.html">Book Now</Link>
             </Button>
           </div>
 
